@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@font-face {
+    font-family: "Ws-paradose";
+    src: url("/fonts/Ws-Paradose.otf");
+}
+@font-face {
+    font-family: "Dirty Punk";
+    src: url("../fonts/Dirty-Punk.otf");
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    background: url('../styles/assets/background1.jpg');
+    background-size: cover;
+    color: #333;
+}
+#welcome{
+    font-family: "Dirty Punk";
+    font-size: 40px;
+    line-height: 100%;
+
+}
+#welcome-text{
+    font-family: "Ws-paradose";
+    font-size: 20px;
+    font-weight: lighter;
+
+}
+
+.container {
+    
+        width: 500px; /* Adjust as needed */
+        padding: 40px;
+        background: #fff2cc; /* Semi-transparent orange */
+        color: #c16382;
+        border-radius: 60px; /* Rounded corners */
+        border: 3px solid black;
+        position: absolute;
+        left: 27%; /* Positions it towards the left */
+        top: 60%; 
+        transform: translateY(-50%); /* Centers vertically */
+        
+        text-align: center;
+    
+}
+.illustration {
+    width: 200px; /* Adjust the size */
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 204, 102, 0.9);
+}
+
+header, main {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f19db6;
+}
+
+.intro {
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 204, 102, 0.9);
+    position: relative;
+    height: 4em;
+}
+@media screen and (max-width: 768px){
+
+}
+    
