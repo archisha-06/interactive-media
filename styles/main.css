@@ -18,13 +18,22 @@ body {
     background: url('../styles/assets/background1.jpg');
     background-size: cover;
     color: #333;
+    cursor: url("../styles/assets/icons8-heart-40.png"), auto;
 }
 #welcome{
     font-family: "Dirty Punk";
     font-size: 40px;
     line-height: 100%;
+    animation: bounceIn 1.2s ease-out;
 
 }
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+
 #welcome-text{
     font-family: "Ws-paradose";
     font-size: 20px;
@@ -48,12 +57,24 @@ body {
         text-align: center;
     
 }
+@keyframes popUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .illustration {
     width: 200px; /* Adjust the size */
     height: auto;
     position: absolute;
     bottom: 10px;
     right: 10px;
+    animation: popUp 0.8s ease-out;
 }
 
 
@@ -81,6 +102,9 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     color: #f19db6;
+}
+nav ul li  :hover{
+    background-color: darkred;
 }
 
 .intro {
